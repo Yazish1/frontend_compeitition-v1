@@ -99,7 +99,7 @@
       <div class="topbar-actions topbar-meta">
         <span class="role-badge">👩‍🏫 Teacher</span>
         <button class="btn btn-primary" type="button">+ Assign Task</button>
-        <button class="signout-btn" onclick="signOut()">Sign out</button>
+        <button class="signout-btn" type="button">Sign out</button>
       </div>
     </header>
 
@@ -182,7 +182,7 @@
                 <div><label style="display:block;font-size:.8rem;color:#888;margin-bottom:.35rem;text-transform:uppercase;font-weight:600;">Display Name</label><input type="text" class="form-control" id="t-name" /></div>
                 <div><label style="display:block;font-size:.8rem;color:#888;margin-bottom:.35rem;text-transform:uppercase;font-weight:600;">Email</label><input type="email" class="form-control" id="t-email" /></div>
                 <div><label style="display:block;font-size:.8rem;color:#888;margin-bottom:.35rem;text-transform:uppercase;font-weight:600;">New Password</label><input type="password" class="form-control" id="t-pass" placeholder="Leave blank to keep current" /></div>
-                <div><button class="btn btn-primary" onclick="saveTeacherSettings()">Save Changes</button></div>
+                <div><button class="btn btn-primary" type="button">Save Changes</button></div>
               </div>
             </div>
             <div id="tp-notifications" style="display:none;background:#13151e;border:1px solid #2a2d3a;border-radius:12px;overflow:hidden;margin-bottom:1rem;">
@@ -244,7 +244,7 @@
   <div id="assign-error" style="color:#f87171;font-size:.82rem;display:none;margin-bottom:.5rem;"></div>
   <div class="modal-footer">
     <button class="btn btn-ghost" onclick="closeAssignModal()">Cancel</button>
-    <button class="btn btn-primary" onclick="saveAssignment()">Assign Task</button>
+    <button class="btn btn-primary" type="button">Assign Task</button>
   </div>
 </div>
 

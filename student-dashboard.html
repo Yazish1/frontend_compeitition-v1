@@ -137,7 +137,7 @@
       <h1 class="topbar-title">Student Dashboard</h1>
       <div class="topbar-actions topbar-meta">
         <span class="role-badge">🎓 Student</span>
-        <button class="signout-btn" onclick="signOut()">Sign out</button>
+        <button class="signout-btn" type="button">Sign out</button>
       </div>
     </header>
 
@@ -170,9 +170,9 @@
             </div>
           </div>
           <div class="cal-nav">
-            <button class="cal-nav-btn" onclick="changeMonth(-1)">‹</button>
+            <button class="cal-nav-btn" type="button">‹</button>
             <button class="cal-nav-btn" onclick="goToday()">Today</button>
-            <button class="cal-nav-btn" onclick="changeMonth(1)">›</button>
+            <button class="cal-nav-btn" type="button">›</button>
           </div>
         </div>
         <div class="cal-grid-wrap"><div class="cal-grid" id="cal-grid"></div></div>
@@ -182,7 +182,7 @@
             <input type="text" id="sc-title" class="form-control" placeholder="Event title" style="flex:2;min-width:140px;" />
             <input type="datetime-local" id="sc-time" class="form-control" style="flex:2;min-width:180px;" />
             <input type="text" id="sc-notes" class="form-control" placeholder="Notes (optional)" style="flex:2;min-width:140px;" />
-            <button class="btn" style="background:#a855f7;color:#fff;flex-shrink:0;" onclick="saveScheduleEven()">+ Add</button>
+            <button class="btn" style="background:#a855f7;color:#fff;flex-shrink:0;" type="button">+ Add</button>
           </div>
           <div id="sc-error" style="color:#f87171;font-size:.8rem;margin-top:.4rem;display:none;"></div>
         </div>
@@ -211,7 +211,7 @@
                   <div class="form-group" style="margin:0;"><label class="form-label">Display Name</label><input type="text" class="form-control" id="s-name" /></div>
                   <div class="form-group" style="margin:0;"><label class="form-label">Email</label><input type="email" class="form-control" id="s-email" /></div>
                   <div class="form-group" style="margin:0;"><label class="form-label">New Password</label><input type="password" class="form-control" id="s-pass" placeholder="Leave blank to keep current" /></div>
-                  <div><button class="btn btn-primary-green" onclick="saveSettings()">Save Changes</button></div>
+                  <div><button class="btn btn-primary-green" type="button">Save Changes</button></div>
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@
               <div class="settings-card danger-zone">
                 <div class="settings-card-header"><div class="settings-card-title" style="color:#f87171;">⚠️ Danger Zone</div></div>
                 <div class="settings-card-body">
-                  <div class="settings-row"><div><div class="settings-row-label">Delete my personal tasks</div><div class="settings-row-sub">Permanently removes all your personal tasks.</div></div><button class="btn btn-danger" onclick="clearMyTasks()">Delete All</button></div>
+                  <div class="settings-row"><div><div class="settings-row-label">Delete my personal tasks</div><div class="settings-row-sub">Permanently removes all your personal tasks.</div></div><button class="btn btn-danger" type="button">Delete All</button></div>
                 </div>
               </div>
             </div>
